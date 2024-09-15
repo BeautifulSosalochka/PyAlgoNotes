@@ -1,5 +1,5 @@
 
-print("\n-----LeetCode требует реализацию через классы-----\n")
+print("\n-----LeetCode requires impl through classes-----\n")
 
 class Solution:
     def __init__(self, words):
