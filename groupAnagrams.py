@@ -18,8 +18,8 @@ class Solution:
                 anagram_dict[sorted_word] = [word]
         self.result = list(anagram_dict.values())
 
-        print(f"Исходный массив: {self.words}\n")
-        print(f"Отсортированный: {self.result}")
+        print(f"Original array: {self.words}\n")
+        print(f"Sorted: {self.result}")
 
 
 string_arr = ["eat","tea","tan","ate","nat","bat"]
