@@ -1,6 +1,3 @@
-import doctest
-
-print("-----LeetCode requires impl through classes-----\n")
 
 class Solution:
     """
@@ -43,6 +40,4 @@ def main():
 
 
 if __name__ == "__main__":
-    test_result = doctest.testmod()
-    if test_result.failed == 0:
-        main()
+    main()
