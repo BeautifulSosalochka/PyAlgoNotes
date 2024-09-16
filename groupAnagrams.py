@@ -1,8 +1,17 @@
+import doctest
 
-print("\n-----LeetCode requires impl through classes-----\n")
+print("-----LeetCode requires impl through classes-----\n")
 
 class Solution:
-    def __init__(self, words):
+    """
+    doctest a class to group anagrams from a list of words.
+    >>> words = ["eat","tea","tan","ate","nat","bat"]
+    >>> result = Solution(words)
+    >>> result.group_anagrams()
+    Original array: ['eat', 'tea', 'tan', 'ate', 'nat', 'bat']
+    Sorted: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+    """
+    def __init__(self, words: list[str]) -> None:
         self.words = words
         self.result = []
     def __getitem__(self, index):
@@ -18,7 +27,7 @@ class Solution:
                 anagram_dict[sorted_word] = [word]
         self.result = list(anagram_dict.values())
 
-        print(f"Original array: {self.words}\n")
+        print(f"Original array: {self.words}")
         print(f"Sorted: {self.result}")
 
 
@@ -31,4 +40,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    test_result = doctest.testmod()
+    if test_result.failed == 0:
+        main()
