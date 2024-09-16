@@ -1,7 +1,6 @@
 
 class Solution:
     """
-    doctest a class to group anagrams from a list of words.
         Attributes:
         words: List of words provided as input.
         result: List that stores grouped anagrams.
