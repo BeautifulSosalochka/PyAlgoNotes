@@ -5,6 +5,9 @@ print("-----LeetCode requires impl through classes-----\n")
 class Solution:
     """
     doctest a class to group anagrams from a list of words.
+        Attributes:
+        words: List of words provided as input.
+        result: List that stores grouped anagrams.
     >>> words = ["eat","tea","tan","ate","nat","bat"]
     >>> result = Solution(words)
     >>> result.group_anagrams()
@@ -12,8 +15,8 @@ class Solution:
     Sorted: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
     """
     def __init__(self, words: list[str]) -> None:
-        self.words = words
-        self.result = []
+        self.words: list[str] = words
+        self.result: list[list[str]] = []
     def __getitem__(self, index):
         return self.words[index]
     def group_anagrams(self):
