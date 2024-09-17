@@ -42,7 +42,7 @@ class IterativeKaratsubaMultiplication:
         else:
             return self.x * self.y
 
-def test_multiply_large_numbers() -> None:
+def test() -> None:
     test_cases = [
         (95514, 36988),
         (123456789012345678901234567890, 987654321098765432109876543210),
@@ -59,7 +59,7 @@ def test_multiply_large_numbers() -> None:
 
 
 def main():
-    test_multiply_large_numbers()
+    test()
 
 
 if __name__ == '__main__':
