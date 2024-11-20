@@ -18,21 +18,17 @@ def quicksort(arr):
 
 
 def test_sorting_algorithms():
-    # Generate a random array with 1 million elements
     array_size = 1_000_000
     test_array = [random.randint(0, 10_000_000) for _ in range(array_size)]
 
-    # Test QuickSort
     start_time = time.time()
     sorted_quicksort = quicksort(test_array.copy())
     quicksort_time = time.time() - start_time
 
-    # Test Built-in Sort
     start_time = time.time()
     sorted_builtin = sorted(test_array.copy())
     builtin_time = time.time() - start_time
 
-    # Validate that both sorting methods produce the same result
     is_correct = sorted_quicksort == sorted_builtin
 
     return quicksort_time, builtin_time, is_correct
