@@ -1,6 +1,7 @@
 
 """
-Algorithm Huffman was implemented with encoding/decoding func, entry point and text function
+Algorithm Huffman was implemented with encoding/decoding func, 
+entry point and test function
 
 """
 
