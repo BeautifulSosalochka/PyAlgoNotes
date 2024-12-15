@@ -1,8 +1,7 @@
 
 """
-Реализован алгоритм Хаффмана с функциями для кодирования,
-декодирования, тестирования и точкой входа main.
-Для тестирования большого входного текста использовать файл large_text_input.txt.
+Algorithm Huffman was implemented with encoding/decoding func, entry point and text function
+
 """
 
 import heapq
@@ -94,9 +93,9 @@ def main():
     decoded_data = huffman_decode(encoded_data, codes)
 
     assert data == decoded_data, "Decoded data does not match original."
-    print("Huffman encoding and decoding completed successfully!")
+    print("Huffman encoding and decoding completed")
 """
 
 if __name__ == "__main__":
     test_huffman()
-    #main() точка входа main предназначена для большого тестирующего текста из файла large_text.input.txt
+    #main() entry point main aimed to handle large text files, such as large_text_input file from the example above
